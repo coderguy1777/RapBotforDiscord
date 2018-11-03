@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-TOKEN = 'NTA4MTQyNTcxNDUzNjc3NTY4.Dr682A.iJQMFHG4VJoStrrXL8finOz7Xig'
+TOKEN = 'NTA4MTQyNTcxNDUzNjc3NTY4.Dr-tOw.gyvQANZjl0ujzpmA1CPz0n9XZOA'
 client = commands.Bot(command_prefix='$')
 
 
@@ -17,6 +17,7 @@ async def on_message(message):
     print('{}: {}'.format(author, content))
     await client.process_commands(message)
 
+
 @client.command()
 async def GrantMacdonald():
     await client.say('https://www.youtube.com/watch?v=2k0SmqbBIpQ')
@@ -30,5 +31,9 @@ async def ShowmeSomeTravisScott():
 @client.command()
 async def AstroWorldSickoMode():
     await client.say('SICKO MODE, By Travis Scott: https://www.youtube.com/watch?v=d-JBBNg8YKs')
+
+@client.command()
+async def AstroWorldStarGazing():
+    await client.say('Star Gazing, By Travis Scott: https://www.youtube.com/watch?v=2a8PgqWrc_4')
 
 client.run(TOKEN)
