@@ -33,24 +33,6 @@ async def Astroworld():
     await client.say('COFFEE BEAN, By Travis Scott: https://www.youtube.com/watch?v=Z6d3BofQqN0')
     await client.say('BUTTERFLY EFFECT, By Travis Scott: https://www.youtube.com/watch?v=k2pwvr8p4vM')
     await client.say('SKELETONS, By Travis Scott: https://www.youtube.com/watch?v=tAyYYKcySXA')
-
-
-@client.command(pass_context=True)
-async def join(ctx):
-    author = ctx.message.author
-    channel = author.voice_channel
-    vc = await client.join_voice_channel(channel)
-
-@client.event
-async def play_yt(link):
-    player = await client.voice_client_in(client.get_server(serverID)).create_ytdl_player(link)
-    player.volume = 0.05
-    player.start()
-    return player
-
-    if message.content.startswith('!yt'):
-        link = message.content.strip('!yt ')
-        player = await play_yt(link)
     
 @client.command()
 async def CANTSAY():

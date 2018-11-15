@@ -16,7 +16,4 @@ async def on_ready():
 async def test():
     await client.say('Hello Animator!')
 
-
-
-
 client.run(TOKEN)
