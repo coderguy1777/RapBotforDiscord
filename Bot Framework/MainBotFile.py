@@ -1,8 +1,9 @@
 import discord
 from discord.ext import commands
 
-
-TOKEN = 'NTA4MTQyNTcxNDUzNjc3NTY4.Dr-tOw.gyvQANZjl0ujzpmA1CPz0n9XZOA'
+# note, token is removed, bot wont work unless you have ur own token to run
+# the script
+TOKEN = ''
 client = commands.Bot(command_prefix='$')
 
 
